@@ -88,6 +88,18 @@ const ListPage = (() => {
     });
   };
 
+  // 상품별 배송비 색상 설정 (T7 조건 - 색상 조작)
+  // p001=C단품(6위,강도1), p002=B묶음(3위,강도2), p003=A단품(4위,강도2)
+  // p004=A묶음(1위,강도3), p005=C묶음(2위,강도2), p006=B단품(5위,강도2)
+  const SHIPPING_COLOR = {
+    'p001': '#6e6e6e',
+    'p002': '#b4b3b3',
+    'p003': '#b4b3b3',
+    'p004': '#eee',
+    'p005': '#b4b3b3',
+    'p006': '#a8a8a8',
+  };
+
   const productRow = (p) => `
     <div class="product-row" data-id="${p.id}">
       <div class="product-row__img">
@@ -101,7 +113,7 @@ const ListPage = (() => {
         </div>
 
         <div class="product-row__footer">
-          <span class="product-row__shipping">${p.shipping}</span>
+          <span class="product-row__shipping" style="color:${SHIPPING_COLOR[p.id] || '#111111'};">${p.shipping}</span>
         </div>
       </div>
     </div>
