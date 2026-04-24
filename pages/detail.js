@@ -93,8 +93,8 @@ const DetailPage = (() => {
       <div class="detail-delivery-row">
         <span class="detail-delivery-label">배송 정보</span>
         <div class="detail-delivery-info">
-          <p class="detail-delivery-addr">- 배송 받을 주소 › <strong>우리집</strong></p>
-          <p class="detail-delivery-note">- ${p.shipping} </p>
+          <p class="detail-delivery-addr">배송 받을 주소 › <strong>우리집</strong></p>
+          <p class="detail-delivery-note">${p.shipping} </p>
         </div>
       </div>
 
