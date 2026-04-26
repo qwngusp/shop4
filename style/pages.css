@@ -286,7 +286,7 @@
 
 .product-row__shipping strong {
   font-weight: 800;
-  color: var(--text-primary);
+  color: #ddd;
 }
 .product-row__footer { margin-top: 4px; }
 .product-row__rating { margin-top: 3px; display: flex; align-items: center; gap: 2px; }
@@ -312,9 +312,9 @@
   gap: 4px;
   font-size: 14px;
   font-weight: 400;
-  color: var(--text-primary);
+  color: #ddd;
   background: #fff;
-  border: 1px solid var(--border-strong);
+  border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   padding: 2px 7px;
   width: fit-content;
